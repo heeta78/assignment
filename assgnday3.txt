@@ -1,0 +1,24 @@
+Ques2.Move files from one folder to the respective folders. 
+Ans:
+a) $ touch abc.txt def.txt ghi.txt jkl.txt
+
+b) $ ls
+abc.txt  def.txt  ghi.txt  jkl.txt
+
+c) fullfilename="abc.txt"
+filename=$(basename "$fullfilename")
+fname="${filename%.*}"
+echo $fname
+output: abc
+
+d) fullfilename="abc.txt"
+filename=$(basename "$fullfilename")
+ext="${filename##*.}"
+echo $ext
+output: txt
+
+e)
+
+f) $ mkdir new
+   $ cp -r abc.txt ../new
+   
